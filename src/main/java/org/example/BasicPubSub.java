@@ -1,5 +1,6 @@
 package org.example;
 
+import lombok.SneakyThrows;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -38,6 +39,14 @@ public class BasicPubSub {
     }
 
 
+//    void runner() {
+//        int count = 0;
+//        while(count <1000) {
+//
+//        }
+//    }
+
+
     void produceEvent()  {
 
             while(true) {
@@ -55,7 +64,7 @@ public class BasicPubSub {
                     }
 
                try {
-                   Thread.sleep(10);
+                   Thread.sleep((int)(Math.random()*1000));
                } catch (Exception e) {
 
                }
@@ -77,7 +86,7 @@ public class BasicPubSub {
                     messageQueue.notifyAll();
             }
             try {
-                Thread.sleep(300);
+                Thread.sleep((int)(Math.random()*1000));
             } catch (Exception e) {
 
             }
