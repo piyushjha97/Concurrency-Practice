@@ -10,10 +10,12 @@ public class Main {
 
         System.out.println("Main method called.");
 
-        ThreadPractice threadPractice = new ThreadPractice();
+      //  ThreadPractice threadPractice = new ThreadPractice();
+    //   threadPractice.perform();
 
+        BasicPubSub basicPubSub = new BasicPubSub();
 
-       threadPractice.perform();
+        basicPubSub.run();
 
     }
 }
