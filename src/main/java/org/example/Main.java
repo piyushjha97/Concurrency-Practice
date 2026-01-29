@@ -1,11 +1,14 @@
 package org.example;
 
+import org.example.java.LockPractice;
 import org.example.java.ThreadPractice;
 
 import java.util.concurrent.ExecutionException;
+import java.util.logging.Logger;
 
 public class Main {
 
+    public static final Logger GlobalLogger = Logger.getLogger("GlobalLogger");
     public static void main(String[] args) throws ExecutionException, InterruptedException {
 
         System.out.println("Main method called.");
@@ -13,9 +16,13 @@ public class Main {
       //  ThreadPractice threadPractice = new ThreadPractice();
     //   threadPractice.perform();
 
-        BasicPubSub basicPubSub = new BasicPubSub();
+//        BasicPubSub basicPubSub = new BasicPubSub();
+//
+//        basicPubSub.run();
 
-        basicPubSub.run();
+
+        LockPractice lockPractice = new LockPractice();
+        lockPractice.run();
 
     }
 }

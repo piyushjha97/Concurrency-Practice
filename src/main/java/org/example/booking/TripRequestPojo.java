@@ -1,4 +1,4 @@
-package org.example.java;
+package org.example.booking;
 
 import lombok.Data;
 import java.util.List;
