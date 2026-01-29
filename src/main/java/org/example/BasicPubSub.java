@@ -1,6 +1,5 @@
 package org.example;
 
-import lombok.SneakyThrows;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -37,14 +36,6 @@ public class BasicPubSub {
         producer.start();
         consumer.start();
     }
-
-
-//    void runner() {
-//        int count = 0;
-//        while(count <1000) {
-//
-//        }
-//    }
 
 
     void produceEvent()  {
