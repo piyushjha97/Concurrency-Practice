@@ -1,4 +1,4 @@
-package org.example.java;
+package org.example.booking;
 
 import java.util.*;
 
