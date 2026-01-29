@@ -37,13 +37,13 @@ public class LockPractice {
 
     void increment() {
         lock.lock();
-        GlobalLogger.info("Acquired Lock");
+        GlobalLogger.info("Acquired Lock by thread: "+ Thread.currentThread().getName());
         try {
             GlobalLogger.info("entered the critical section with counter value as: "+ counter);
             counter++;
             GlobalLogger.info("exiting the critical section by incrementing counter to: "+ counter);
         } finally {
-            GlobalLogger.info("unlocking the critical section");
+            GlobalLogger.info("unlocking the critical section by thread: "+ Thread.currentThread().getName());
             lock.unlock();
         }
     }
