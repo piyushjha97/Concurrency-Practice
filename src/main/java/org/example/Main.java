@@ -1,6 +1,7 @@
 package org.example;
 
 import org.example.java.LockPractice;
+import org.example.java.SemaphorePractice;
 import org.example.java.ThreadPractice;
 
 import java.util.concurrent.ExecutionException;
@@ -21,8 +22,11 @@ public class Main {
 //        basicPubSub.run();
 
 
-        LockPractice lockPractice = new LockPractice();
-        lockPractice.run();
+//        LockPractice lockPractice = new LockPractice();
+//        lockPractice.run();
+
+        SemaphorePractice semaphorePractice = new SemaphorePractice();
+        semaphorePractice.run();
 
     }
 }
