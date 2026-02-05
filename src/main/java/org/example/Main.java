@@ -1,6 +1,7 @@
 package org.example;
 
 import org.example.java.LockPractice;
+import org.example.java.ReaderWriterLock;
 import org.example.java.SemaphorePractice;
 import org.example.java.ThreadPractice;
 
@@ -25,8 +26,11 @@ public class Main {
 //        LockPractice lockPractice = new LockPractice();
 //        lockPractice.run();
 
-        SemaphorePractice semaphorePractice = new SemaphorePractice();
-        semaphorePractice.run();
+//        SemaphorePractice semaphorePractice = new SemaphorePractice();
+//        semaphorePractice.run();
+
+        ReaderWriterLock readerWriterLock = new ReaderWriterLock();
+        readerWriterLock.run();
 
     }
 }
